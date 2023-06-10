@@ -1,0 +1,3 @@
+findspark
+openai==0.27.7
+langchain==0.0.195
