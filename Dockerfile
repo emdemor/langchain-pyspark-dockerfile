@@ -11,5 +11,6 @@ RUN pip install -r /home/jovyan/project/requirements.txt
 
 EXPOSE 8888
 
-# Comando para iniciar o Jupyter Notebook
+VOLUME /home/jovyan/project
+
 CMD ["start-notebook.sh", "--NotebookApp.token=''", "--NotebookApp.password=''", "--NotebookApp.default_url='/lab/tree'"]
